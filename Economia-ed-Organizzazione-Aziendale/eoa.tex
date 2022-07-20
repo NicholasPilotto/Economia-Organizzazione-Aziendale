@@ -1,0 +1,38 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[english,italian]{babel} %lingue utilizzate
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx} %img/media
+\usepackage{enumitem} %lists
+\usepackage{listings} %coding environment 
+\usepackage{mathtools} %math package
+\usepackage{amssymb} %pacchetto per i simboli di matematica
+\usepackage{amsmath} %pacchetto di matematica
+\usepackage{amsthm} %pacchetto di matematica
+
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\usepackage{hyperref} %linkare l indice
+\hypersetup{hidelinks} %nascondere i link dell'indice
+
+
+\begin{document}
+    \author{Nicholas Pilotto - Università degli studi di Padova}
+    \title{Appunti di Economia ed Organizzazione Aziendale}
+
+    \maketitle
+    \newpage
+    \tableofcontents
+	\newpage
+	
+	\input{resources/section.tex}
+\end{document}
